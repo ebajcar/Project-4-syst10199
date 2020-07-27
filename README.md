@@ -20,6 +20,8 @@ All code follows
 - Database connection must be implemented with PDO.
 - Include internal Javascript to guide user to choose a strong password and to compare the two password fields are the same.
 - Save credentials in a separate file `dbinfo.php` and change permissions to be executable only (use your Linux class knowledge).
+- Upon successful login, re-direct user to the home page (see [image](content_page.png) ) and allow them to play tic tac toe. 
+- Logout signs them out and redirects to the public login page.
 
 ## Evaluation
 
