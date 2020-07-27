@@ -13,10 +13,13 @@ All code follows
 
 ## Requirements
 
-Use the [template.html](template.html) as initial HTML and CSS code. All pages share the same CSS.  Customize the content appropriately.
-Create site sub-tree on dev.fast.sheridanc.on.ca.
-Create "member" table through cPanel > phpmyadmin in `username_assignments` database
-Complete Exercise 11-3, Worksheet 11 to create the login page, registration page.
+- Use the [template.html](template.html) as initial HTML and CSS code. All pages share the same CSS.  Customize the content appropriately.
+- Create site sub-tree on dev.fast.sheridanc.on.ca. (use internal CSS and Javascript, no images), name your public home page index.php (with the login form) -- all php files in the root directory of the project.
+- Create "member" table through cPanel > phpmyadmin in `username_assignments` database
+- Complete Exercise 11-3, Worksheet 11 to create the login page, registration page.
+- Database connection must be implemented with PDO.
+- Include internal Javascript to guide user to choose a strong password and to compare the two password fields are the same.
+- Save credentials in a separate file `dbinfo.php` and change permissions to be executable only (use your Linux class knowledge).
 
 ## Evaluation
 
