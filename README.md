@@ -18,10 +18,16 @@ Create site sub-tree on dev.fast.sheridanc.on.ca.
 Create "member" table through cPanel > phpmyadmin in `username_assignments` database
 Complete Exercise 11-3, Worksheet 11 to create the login page, registration page.
 
+## Evaluation
+
+Read How evaluation works and Coding style as posted for previous assignments.
+
+Your assignment will be evaluated by running your app on the dev.fast server.  I will attempt to log in with credentials that I select, first to ensure that the login fails, then I will register with the selected credentials, then login as a new member, to view member-only content. Finally, log out to ensure I can no longer access it. 
+
 
 ## Resources
 
-Under construction
+See SLATE material and class recordings.
 
 ---
 
