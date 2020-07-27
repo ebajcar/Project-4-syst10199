@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>$pagetitle</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">	
+<!--
+File name: header.php
+Author: Ellen Bajcar
+Date created: Summer 2018
+Date modified: Summer 2020
+Version: 1.0
+Copyright: 
+	This work is the intellectual property of Sheridan College. 
+	Any further copying and distribution outside of class must be within 
+	the copyright law. Posting to commercial sites for profit is prohibited.
+Purpose: summer 2018 web programming
+Description:
+  Building a members only web app with PHP and MySQL
+-->  
+<style>
+body {
+	background: #e0e0e0;
+  font-family: Helvetica,Arial,"Lucida Grande",sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+main, section {
+	width: 100%;
+	margin: auto;
+	padding-top: 20px;
+	background-color: white;	
+}
+main {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-height: 250px;
+	display: block;
+	justify-content: center;	
+}
+header h1, header h2 {
+	color: #6f6f6f;   
+  font-family: Lato, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+	margin: 20px 0 0;
+  text-align: center;
+  text-shadow: 0 0 0 rgba(0,0,0,.4);
+}
+main h3 {
+	font-size: 32px;
+	letter-spacing: 5px;
+	padding: 0;
+	margin: 0;
+}
+footer {
+	margin: auto;
+	padding-top: 10px;
+	margin-top: 10px;
+	text-align: center;
+	color: gray;
+}
+button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background-color: #ddd;
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+/* navigation */
+nav {
+  margin: 20px auto;
+  width: 450px;
+	text-align: center;
+}
+nav a {
+  background-color: #a4a4a4;
+  color: #fff;
+  display: inline-block;
+	font-family: Lato, sans-serif;
+  font-size: 15px;
+  padding: 7px;
+  text-decoration: none;
+}
+nav a.active, nav a:hover {
+  background: #c2c2c2;
+  color: #818181;
+}
+[type="submit"], [type="reset"], [type="text"], [type="password"] {
+  width: 40%;
+  margin: 10px;
+}
+.narrow {
+  width: 50%; 
+  margin: auto;  
+}
+</style>
+</head>
+<body>
+	<header><h1>$pagetitle</h1></header>
+	<nav>
+    <a href="login.php?pagetitle=Login-Page" class="active">Login</a>
+    <a href="register.php?pagetitle=Become-A-Member">Become A Member</a>
+    <a href="logout.php">Log out</a>
+  </nav>
+
+<main>
+	<form  class="narrow" method="POST" autocomplete="off">
+
+			<label>Enter Username</label><br>
+			<input type="text" 
+             placeholder="Enter your username (required)" 
+             name="username"
+             required
+             autocomplete="off"><br>
+      
+			<label>Enter Password</label><br>
+			<input  type="password" 
+              name="password" 
+              placeholder="Enter your password (required)" 
+              required 
+              autocomplete="off"><br>
+      
+			<input type="hidden" name="curdate"><br>
+      
+			<input type="submit" value="Log in"><br>
+      
+			<input type="reset" value="Reset">
+	</form>		
+</main>
+<footer>
+  <address>Web Programming @ Sheridan College</address>
+</footer>
+</body>
+</html>
+
+
+
